@@ -327,16 +327,3 @@ def mask_comaprison(image, true_mask, pred_mask, index=0):
     plt.axis("off")
     plt.tight_layout()
     plt.show()
-
-# <TO DO>
-# 1. Fine tune the model to try and see if it can distinguish between background noise
-#    and the cancer cell better or not => Start with last (latest) ChatGPT Prompt created:
-#    "trying to upscale the resolution quality from 128x128 to 256x256 has tripled each epoch's 
-#    load time to ~140-150s per ephoc. Is there a way to upscale the resolution without it taking so long?"
-# 2. Remove all unnecessary comments created by ChatGPT or me
-
-# <COMPLETED>
-# 1. Model successfully prints training accuracy and loss values + their respective graphs
-# 2. Need to check if model is over- / under-fitting (find way to compare the results of the output with 
-#    what should be printed out)
-# 3. Need to still print the final mask of the post-trained dataset
