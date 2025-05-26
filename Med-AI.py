@@ -23,7 +23,11 @@ from sklearn.model_selection import train_test_split
 
 from MedData_Loader import load_images
 
-IMG_DIR = r"<FILE PATH WHERE IMAGES HAVE BEEN STORED LOCALLY>"
+# The "<FILE PATH>" variable should be replaced with the File Path String extracted from "right-clicking" the folder 
+# I.e.: "C:/Desktop/User/Project_Name"
+# If you do not want this variable to be exposed you can instead place this in a separate (.env) file
+
+IMG_DIR = r"<FILE PATH>"
 
 # Threshold is the split for Training-Testing
 # gray=True / gray=False is "toggle" for Black and White vs. Colour
