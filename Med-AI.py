@@ -16,6 +16,7 @@ from tensorflow.keras import layers
 from tensorflow.keras import callbacks
 from tensorflow.keras.callbacks import EarlyStopping
 from tensorflow.keras.losses import SparseCategoricalCrossentropy
+from tensorflow.keras.models import Model
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -331,3 +332,5 @@ def mask_comaprison(image, true_mask, pred_mask, index=0):
     plt.axis("off")
     plt.tight_layout()
     plt.show()
+    
+model.save("MedAI_Results.keras")

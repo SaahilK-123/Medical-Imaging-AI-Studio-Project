@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Diagnostic Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --primary-dark: #0d47a1;
+            --secondary: #e8f0fe;
+            --danger: #d32f2f;
+            --success: #388e3c;
+            --text: #202124;
+            --text-light: #5f6368;
+            --white: #ffffff;
+            --gray: #f1f3f4;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: var(--text);
+            background-color: #fafafa;
+            line-height: 1.6;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .header h1 {
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .header p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+        
+        .upload-container {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        
+        .upload-form {
+            display: inline-block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 500px;
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .image-box {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            background-color: var(--white);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        
+        .image-box h2 {
+            color: var(--primary);
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .upload-btn {
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .upload-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .upload-btn i {
+            margin-right: 8px;
+        }
+        
+        .file-input {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .file-input input {
+            width: 100%;
+            padding: 12px;
+            border: 2px dashed #dadce0;
+            border-radius: 8px;
+            background-color: var(--secondary);
+            color: var(--text-light);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .file-input input:hover {
+            border-color: var(--primary);
+        }
+        
+        .probability-container {
+            margin-top: 30px;
+            background-color: var(--white);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        
+        .probability-title {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+        
+        .probability-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--danger);
+            margin-bottom: 20px;
+        }
+        
+        .progress-container {
+            width: 100%;
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background-color: var(--danger);
+            width: 0;
+            transition: width 1s ease-in-out;
+        }
+        
+        .interpretation {
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-top: 10px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        @media (max-width: 768px) {
+            .image-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><i class="fas fa-heartbeat"></i> Medical Diagnostic Assistant</h1>
+        <p>Upload your medical scan for AI-powered analysis and segmentation</p>
+    </div>
+
+    <div class="upload-container">
+        <form class="upload-form" method="post" enctype="multipart/form-data">
+            <div class="file-input">
+                <input type="file" name="image" accept=".png,.jpg,.jpeg" required>
+            </div>
+            <button class="upload-btn" type="submit"><i class="fas fa-upload"></i> Analyze Image</button>
+        </form>
+    </div>
+
+    {% if original_image %}
+    <div class="probability-container">
+        <div class="probability-title">Disease Probability Assessment</div>
+        <div class="probability-value">{{ probability }}%</div>
+        <div class="progress-container">
+            <div class="progress-bar" style="width: {{ probability }}%"></div>
+        </div>
+        <div class="interpretation">
+            {% if probability >= 90 %}
+            <i class="fas fa-exclamation-triangle"></i> High probability - Immediate review recommended
+            {% elif probability >= 85 %}
+            <i class="fas fa-exclamation-circle"></i> Moderate probability - Further evaluation advised
+            {% else %}
+            <i class="fas fa-check-circle"></i> Low probability - Routine follow-up suggested
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="image-container">
+        <div class="image-box">
+            <h2><i class="fas fa-image"></i> Original Image</h2>
+            <img src="{{ url_for('uploaded_file', filename=original_image) }}" alt="Original Image">
+        </div>
+        <div class="image-box">
+            <h2><i class="fas fa-project-diagram"></i> Segmentation Result</h2>
+            <img src="{{ url_for('result_file', filename=segmented_image) }}" alt="Segmentation Result">
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="footer">
+        <p>© 2023 Medical Diagnostic Assistant | For research purposes only</p>
+    </div>
+
+    <script>
+        // 简单的动画效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressBar = document.querySelector('.progress-bar');
+            if (progressBar) {
+                // 确保宽度设置后动画生效
+                setTimeout(() => {
+                    progressBar.style.width = progressBar.style.width;
+                }, 100);
+            }
+        });
+    </script>
+</body>
+</html>
