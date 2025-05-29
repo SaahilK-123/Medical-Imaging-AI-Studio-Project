@@ -36,4 +36,4 @@ This Medical Imaging AI Project combines a FastAPI Backend with two types of Fro
 
 ### Credits:
 
-Kst5681 (Link to Profile: https://github.com/Kst5681) for creating the sample website.
+[Kst5681](https://github.com/Kst5681) for creating the sample website.
