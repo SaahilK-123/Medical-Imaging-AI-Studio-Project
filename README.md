@@ -7,7 +7,8 @@ This project implements the U-Net Architecture using the Keras 3.0 Deep Machine 
 This Medical Imaging AI Project combines a FastAPI Backend with two types of Frontends: A Streamlit-based UI for Image Interaction and a HTML / JavaScript Dashboard for advanced visualisation.
 The system simulates a clinically-applicable website where users (both Medical Professionals like Radiologists and even members of the General Public) can anonymously upload medical images to the website and view their results.
 
-# To run the application locally, follow these steps:
+## To run the application locally, follow these steps:
+- Follow all the steps in this setup video [TensorFlow Setup Video](https://www.youtube.com/watch?v=1y8RM4pzM0s)
 - Create .env file in the project directory and add the required environment variables
 - Create a virtual environment and install the required packages: pip install -r requirements.txt
 - Run the python backend: **uvicorn utils.api:app**
