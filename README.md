@@ -8,20 +8,21 @@ This Medical Imaging AI Project combines a FastAPI Backend with two types of Fro
 The system simulates a clinically-applicable website where users (both Medical Professionals like Radiologists and even members of the General Public) can anonymously upload medical images to the website and view their results.
 
 ## To run the application locally, follow these steps:
-- Follow all the steps in this setup video [TensorFlow Setup Video](https://www.youtube.com/watch?v=1y8RM4pzM0s)
-- Create .env file in the project directory and add the required environment variables
-- Create a virtual environment and install the required packages: pip install -r requirements.txt
-- Run the python backend: **uvicorn utils.api:app**
-- Change the const api_url variable in webapp/main.js to http://127.0.0.1:8000
-- Open the **index.html** file in your browser or run command **streamlit run webapp/app.py** and use the app 
+1. Create a virtual environment (.venv)
 
-## Required Environment varables:
-- ACCOUNT_STORAGE="YOUR STORAGE ACCOUNT"
-- USERNAME_AZURE="YOUR SQL USERNAME"
-- PASSWORD="YOUR SQL PASSWORD"
-- SERVER="YOUR AZURE SQL SERVER" * MAKE SURE TO HAVE database.windows.net
-- DATABASE="YOUR AZURE SQL DATABASE"
-- JWT_SECRET_KEY="ANY SECRET KEY FOR THE APP"
+2. Follow all the steps in this setup video [TensorFlow Setup Video](https://www.youtube.com/watch?v=1y8RM4pzM0s) to correctly install the TensorFlow Backend and verify installation.
+   NOTE 1: The following version will install Tensorflow v2.0 which comes pre-installed with Keras 3.0 hence pip installing Keras will not be necessary.
+   NOTE 2: To explicitly check and verify each dependency is installed correctly you can follow the comments placed at the top of the [ Med-AI.py ] file prior to the " AI Scripting Begins Here " comment.
+   NOTE 3: To run Keras 3.0 with TensorFlow the latest supported Python version is [ 3.11.0 ]. Set this as the Local version to run the project (alongside any other Python versions that may exist on the device)
+
+4. Define the IMG_DIR variable with the location of the Training Data Folder (it may be necessary to download the Training Data Folder first and then 'Copy as Path')
+   NOTE: If you do not wish to use this method then consider configuring a (.env) file with this and other variables that contain sensitive information.
+
+5. Run the [ Med-AI.py ] file and save the resultant model of the file.
+
+6. Run the FastAPI Backend: **uvicorn backend.main:app --reload**
+
+7. Run the Streamlit Frontend: **streamlit run webapp/app.py**
 
 ### Official Azure Documentations:
 
