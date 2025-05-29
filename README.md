@@ -24,14 +24,16 @@ This Medical Imaging AI Project combines a FastAPI Backend with two types of Fro
     ⚠️ NOTE 3: To run Keras 3.0 with TensorFlow the latest supported Python version is [ 3.11.0 ]. Set this as the Local version to run the project (alongside any 
     other Python versions that may exist on the device)
 
-4. Define the IMG_DIR variable with the location of the Training Data Folder (it may be necessary to download the Training Data Folder first and then 'Copy as Path')
-   NOTE: If you do not wish to use this method then consider configuring a (.env) file with this and other variables that contain sensitive information.
+4. Define the IMG_DIR variable with the location of the Training Data Folder
+   - Option 1: Use Python's 'Copy as Path' to insert the local directory.
+   - Option 2: Configure a (.env) file in the main workspace (do not put it inside of a folder or other sub-section) [Recommended for larger projects or cloud- 
+     based projects].
 
-5. Run the [ Med-AI.py ] file and save the resultant model of the file.
+6. Run the [ Med-AI.py ] file and save the resultant model of the file.
 
-6. Run the FastAPI Backend: **uvicorn backend.main:app --reload**
+7. Run the FastAPI Backend: **uvicorn backend.main:app --reload**
 
-7. Run the Streamlit Frontend: **streamlit run webapp/app.py**
+8. Run the Streamlit Frontend: **streamlit run webapp/app.py**
 
 ### Credits:
 
