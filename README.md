@@ -11,8 +11,11 @@ The system simulates a clinically-applicable website where users (both Medical P
 1. Create a virtual environment (.venv)
 
 2. Follow all the steps in this setup video [TensorFlow Setup Video](https://www.youtube.com/watch?v=1y8RM4pzM0s) to correctly install the TensorFlow Backend and verify installation.
+   
    NOTE 1: The following version will install Tensorflow v2.0 which comes pre-installed with Keras 3.0 hence pip installing Keras will not be necessary.
+
    NOTE 2: To explicitly check and verify each dependency is installed correctly you can follow the comments placed at the top of the [ Med-AI.py ] file prior to the " AI Scripting Begins Here " comment.
+
    NOTE 3: To run Keras 3.0 with TensorFlow the latest supported Python version is [ 3.11.0 ]. Set this as the Local version to run the project (alongside any other Python versions that may exist on the device)
 
 4. Define the IMG_DIR variable with the location of the Training Data Folder (it may be necessary to download the Training Data Folder first and then 'Copy as Path')
