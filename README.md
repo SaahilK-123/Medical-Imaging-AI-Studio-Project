@@ -4,14 +4,10 @@ This project implements the U-Net Architecture using the Keras 3.0 Deep Machine 
 
 ## Full Stack Application
 
-The FastAPI backend is deployed on [Render](https://render.com) after being complied into a Docker image. The Frontend application is deployed on [Streamlit Community Cloud](https://etl-tutorial.streamlit.app) (Python version) and [Vercel](https://etl-tutorial.vercel.app) (HTML version). The purpose of this application is to show different data privileges for different users: Data Manager and Employee where the manager has more data access while the employee can only access personal information.
+This Medical Imaging AI Project combines a FastAPI Backend with two types of Frontends: A Streamlit-based UI for Image Interaction and a HTML / JavaScript Dashboard for advanced visualisation.
+The system simulates a clinically-applicable website where users (both Medical Professionals like Radiologists and even members of the General Public) can anonymously upload medical images to the website and view their results.
 
-- The username and password for manager are: manager1 - managerpass
-- There are 3 employees base on the SQL data: ann, bob, and john with the same password 1234
-
-Please follow the [Tutorial Videos](https://www.youtube.com/watch?v=yIflPdERBvY&list=PL5WVbgdMDtS0rBQzayZnYlnIDHHyEAYxy) for project set up and implementation
-
-To run the application locally, follow these steps:
+# To run the application locally, follow these steps:
 - Create .env file in the project directory and add the required environment variables
 - Create a virtual environment and install the required packages: pip install -r requirements.txt
 - Run the python backend: **uvicorn utils.api:app**
