@@ -26,8 +26,8 @@ This Medical Imaging AI Project combines a FastAPI Backend with two types of Fro
 
 4. Define the IMG_DIR variable with the location of the Training Data Folder
    - Option 1: Use Python's 'Copy as Path' to insert the local directory.
-   - Option 2: Configure a (.env) file in the main workspace (do not put it inside of a folder or other sub-section) [Recommended for larger projects or cloud- 
-     based projects].
+   - Option 2: Configure a (.env) file in the main workspace (do not put it inside of a folder or other sub-section) [Recommended for larger projects or       
+     cloud-based projects].
 
 6. Run the [ Med-AI.py ] file and save the resultant model of the file.
 
