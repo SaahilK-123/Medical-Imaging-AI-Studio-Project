@@ -333,4 +333,4 @@ def mask_comaprison(image, true_mask, pred_mask, index=0):
     plt.tight_layout()
     plt.show()
     
-model.save("MedAI_Results.keras")
+unet_model.save("MedAI_Results.keras")
