@@ -16,7 +16,7 @@
 
 6. [Authors](#Authors)
 
-### Project Description
+## Project Description
 #### *School of Data Engineering (SEDE) Studio Project*
 The following project focuses on developing an AI capable of detecting different sized cancer cells from a random sample of medical scans. These scans are then uploaded and processed anonymously through a Web App.
 
