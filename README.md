@@ -25,6 +25,8 @@ The following project focuses on developing an AI capable of detecting different
 
 TensorFlow: 2.20.0
 
+Keras: 3.13.2
+
 Python: 3.11.0
 
 Pandas: 2.3.3
@@ -93,11 +95,6 @@ This project is used primarily for clinical-style settings by the following enti
 ```bash
   python app.py
 ```
-
-
-## Demo
-
-Insert gif or link to demo
 
 
 ## Authors
