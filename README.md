@@ -12,9 +12,7 @@
 
 4. [Run Locally](#Run-Locally)
 
-5. [Demo](#Demo)
-
-6. [Authors](#Authors)
+5. [Authors](#Authors)
 
 ## Project Description
 #### *School of Data Engineering (SEDE) Studio Project*
