@@ -1,39 +1,104 @@
-## U-Net Implementation with Keras 3.0 and TensorFlow in Python
 
-This project implements the U-Net Architecture using the Keras 3.0 Deep Machine Learning Library with TensorFlow as its backend. Its focus is on medical image segmentation and integrates this model into a Full Stack AI-Powered Application for clinical-style use. Users - such as Radiologists and the General Public - will be able to anonymously upload medical scans and receive processed results. This project simulates a privacy-aware and clinically-applicable workflow.
+# AI Breast Cancer (Medical Imaging) Detection
+#### *School of Data Engineering [SEDE] Studio Project*
+The following project focuses on developing an AI capable of detecting different sized cancer cells from a random sample of medical scans. These scans are then uploaded and processed anonymously through a Web App.
 
-## Full Stack Application
 
-This Medical Imaging AI Project combines a FastAPI Backend with two types of Frontends: 
+## Table of Contents
 
-1. A Streamlit-based UI for viewing Image Segmented results interactively
+1. [Project Description](#School-of-Data-Engineering-[SEDE]-Studio-Project)
 
-2. A HTML / JavaScript Dashboard for advanced visualisation with scope to expand into role-based access levels (different functions for general public user vs 
-   medical professional)
+2. [Technologies](#Technologies)
 
-## To run the application locally, follow these steps:
-1. Create a virtual environment (.venv)
+3. [Industry Applications](#Used-By)
 
-2. Follow all the steps in this setup video [TensorFlow Setup Video](https://www.youtube.com/watch?v=1y8RM4pzM0s) to correctly install the TensorFlow Backend and verify installation.
-   
-    ⚠️ NOTE 1: The following version will install Tensorflow v2.0 which comes pre-installed with Keras 3.0 hence pip installing Keras will not be necessary.
+4. [Run Locally](#Run-Locally)
 
-    ⚠️ NOTE 2: To explicitly check and verify each dependency is installed correctly you can follow the comments placed at the top of the [ Med-AI.py ] file prior 
-    to the " AI Scripting Begins Here " comment.
+5. [Demo](#Demo)
 
-    ⚠️ NOTE 3: To run Keras 3.0 with TensorFlow the latest supported Python version is [ 3.11.0 ]. Set this as the Local version to run the project (alongside any 
-    other Python versions that may exist on the device)
+6. [Authors](#Authors)
 
-4. Define the IMG_DIR variable with the location of the Training Data Folder
-   - Option 1: Use Python's 'Copy as Path' to insert the local directory.
-   - Option 2: Configure a (.env) file in the main workspace (do not put it inside of a folder or other sub-section) [Recommended for larger projects or cloud-based projects].
 
-6. Run the [ Med-AI.py ] file and save the resultant model of the file.
+## Technologies
 
-7. Run the FastAPI Backend: **uvicorn backend.main:app --reload**
+TensorFlow: 2.20.0
 
-8. Run the Streamlit Frontend: **streamlit run webapp/app.py**
+Python: 3.11.0
 
-### Credits:
+Pandas: 2.3.3
 
-[Kst5681](https://github.com/Kst5681) for creating the sample website.
+Numpy: 2.4.2
+
+Matplotlib: 3.10.8
+
+Scikit-learn: 1.8.0
+
+Scipy: 1.17.1
+
+OpenCV-Python: 4.13.0.92
+
+Flask: 3.1.3
+
+Werkzeug: 3.1.6
+
+Uvicorn: 0.41.0
+
+Streamlit: 1.55.0
+
+
+## Used By
+
+This project is used primarily for clinical-style settings by the following entities:
+
+- Radiologists
+- Pathologists
+- Medical Specialists
+- General Public (through referral)
+
+
+## Run Locally
+
+1. Clone the project:
+
+```bash
+  git clone https://github.com/SaahilK-123/Medical-Imaging-AI-Studio-Project
+```
+
+2. Create a Python Virtual Environment:
+
+```bash
+  macOS / Linux: python3 -m venv <venv name>
+  Windows: python -m venv <venv name>
+```
+
+3. Activate the Virtual Environment:
+
+```bash
+  macOS / Linux: source <venv name>/bin/activate
+  Windows (Command Promot): <venv name>\Scripts\activate.bat
+  Windows (PowerShell): .\\<venv name>\\Scripts\\Activate.ps1
+```
+4. Select interpreter and choose newly created Virtual Environment
+
+5. Install all pre-requisites through the Virtual Environment Terminal:
+
+```bash
+  pip install -r requirements.txt
+```
+
+6. Run the app (on a new Terminal) and open resultant webpage:
+
+```bash
+  python app.py
+```
+
+
+## Demo
+
+Insert gif or link to demo
+
+
+## Authors
+
+- [@Kst5681](https://github.com/Kst5681)
+- [@ivany-sys](https://github.com/ivany-sys)
