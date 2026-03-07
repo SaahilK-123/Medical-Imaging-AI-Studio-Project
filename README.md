@@ -48,7 +48,7 @@ Uvicorn: 0.41.0
 Streamlit: 1.55.0
 
 
-## Used By
+## Industry Applications
 
 This project is used primarily for clinical-style settings by the following entities:
 
