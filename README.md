@@ -1,12 +1,10 @@
 
 # AI Breast Cancer (Medical Imaging) Detection
-#### *School of Data Engineering [SEDE] Studio Project*
-The following project focuses on developing an AI capable of detecting different sized cancer cells from a random sample of medical scans. These scans are then uploaded and processed anonymously through a Web App.
 
 
 ## Table of Contents
 
-1. [Project Description](#School-of-Data-Engineering-[SEDE]-Studio-Project)
+1. [Project Description](#Project-Description)
 
 2. [Technologies](#Technologies)
 
@@ -17,6 +15,10 @@ The following project focuses on developing an AI capable of detecting different
 5. [Demo](#Demo)
 
 6. [Authors](#Authors)
+
+### Project Description
+#### *School of Data Engineering (SEDE) Studio Project*
+The following project focuses on developing an AI capable of detecting different sized cancer cells from a random sample of medical scans. These scans are then uploaded and processed anonymously through a Web App.
 
 
 ## Technologies
