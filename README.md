@@ -99,3 +99,6 @@ This project is used primarily for clinical-style settings by the following enti
 
 - [@Kst5681](https://github.com/Kst5681)
 - [@ivany-sys](https://github.com/ivany-sys)
+- [@Any-V](https://github.com/Any-V)
+- [@jennifernguyen0512-cell](https://github.com/jennifernguyen0512-cell)
+- [@ChhoungBun27](https://github.com/ChhoungBun27)
