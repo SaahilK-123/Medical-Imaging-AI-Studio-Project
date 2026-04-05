@@ -12,7 +12,9 @@
 
 4. [Run Locally](#Run-Locally)
 
-5. [Authors](#Authors)
+5. [Future Optimisation Roadmap](#Roadmap-of-Future-Optimisations)
+
+6. [Authors](#Authors)
 
 ## Project Description
 #### *School of Data Engineering (SEDE) Studio Project*
