@@ -21,31 +21,21 @@ The following project focuses on developing an AI capable of detecting different
 
 ## Technologies
 
-TensorFlow: 2.20.0
-
-Keras: 3.13.2
-
-Python: 3.11.0
-
-Pandas: 2.3.3
-
-Numpy: 2.4.2
-
-Matplotlib: 3.10.8
-
-Scikit-learn: 1.8.0
-
-Scipy: 1.17.1
-
-OpenCV-Python: 4.13.0.92
-
-Flask: 3.1.3
-
-Werkzeug: 3.1.6
-
-Uvicorn: 0.41.0
-
-Streamlit: 1.55.0
+| Module | Version |
+|:-------|--------:|
+| TensorFlow    |   2.20.0  |
+| Keras         |   3.13.2  |
+| Python        |   3.11.0  |
+| Pandas        |   2.3.3   |
+| Numpy         |   2.4.2   |
+| Matplotlib    |   3.10.8  |
+| Scikit-learn  |   1.8.0   |
+| Scipy         |   1.17.1  |
+| OpenCV-Python | 4.13.0.92 |
+| Flask         |   3.1.3   |
+| Werkzeug      |   3.1.6   |
+| Uvicorn       |   0.41.0  |
+| Streamlit     |   1.55.0  |
 
 
 ## Industry Applications
@@ -94,6 +84,23 @@ This project is used primarily for clinical-style settings by the following enti
   python app.py
 ```
 
+## Roadmap of Future Optimisations
+
+Since al the project deliverables have been met, any further development undertaken will be intermittent and for optimisational purposes only.
+
+Below are the some optimisations that can still be committed to the project:
+
+1. *GPU Accelerated Learning:*
+
+At the time of building this project, all development was being done on Central Processing Units (CPUs). In other words, there was no scope for parallel processing as the devices used did not contain dedicated Grapics Processing Units (GPUs).
+
+Modifying the code to run GPU-accelerated learning will see significant decreases in the training time of the model over longer epochs (50-100 instead of 10-20).
+
+2. *Image Augmentations:*
+
+Since the image dataset contains a mix of small and large cancer cells, all with different orientations and positioning it is imperative to train this model on all possible augmentations possible.
+
+To do this some preliminary configurations would be necessary before being trained using the U-Net Architecture.
 
 ## Authors
 
