@@ -21,8 +21,8 @@ The following project focuses on developing an AI capable of detecting different
 
 ## Technologies
 
-| Module | Version |
-|:-------|--------:|
+|     Module    |  Version  |
+|:--------------|----------:|
 | TensorFlow    |   2.20.0  |
 | Keras         |   3.13.2  |
 | Python        |   3.11.0  |
